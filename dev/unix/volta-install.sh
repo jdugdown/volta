@@ -129,8 +129,6 @@ parse_os_info() {
     Linux)
       if [ "$arch" == "x86_64" ]; then
         echo "linux"
-      elif [ "$arch" == "aarch64" ]; then
-        echo "linux-aarch64"
       else
         error "Releases for non x64 architectures are not currently supported."
         return 1
